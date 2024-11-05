@@ -23,8 +23,17 @@
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
   },
+  "lint-staged": {
+    "*.{jsx,less,md,json}": [
+      "prettier --cache --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --cache --parser=typescript --write"
+    ]
+  },
   "dependencies": {},
   "devDependencies": {
+    "@eslint/js": "^10.0.0",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-node-resolve": "^15.3.0",
@@ -33,11 +42,20 @@
     "@rollup/plugin-typescript": "^12.1.1",
     "@types/node": "^22.9.0",
     "@types/react": "^18.3.12",
+    "eslint": "^9.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "globals": "^15.12.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
     "rollup": "^4.24.4",
     "rollup-plugin-dts": "^6.1.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-typescript2": "^0.36.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.13.0"
   }
 }
