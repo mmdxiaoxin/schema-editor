@@ -1,0 +1,43 @@
+{
+  "name": "schema-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/schema-editor.cjs.js",
+  "module": "dist/schema-editor.esm.js",
+  "type": "module",
+  "types": "dist/schema-editor.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "editor",
+    "react"
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": "mmdxiaoxin",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-replace": "^6.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.1",
+    "@types/node": "^22.9.0",
+    "@types/react": "^18.3.12",
+    "rollup": "^4.24.4",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
